@@ -1,3 +1,4 @@
+// Filter
 const _ = require('lodash')
 
 const filter = (collection) => {
@@ -5,3 +6,10 @@ const filter = (collection) => {
 }
 
 module.exports = filter
+
+// SortBy
+const sortBy = (data) => {
+  return _.sortBy(data, 'quantity').reverse()
+}
+
+module.exports = sortBy
